@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multitool
+  labels:
+    name: multitool
+  namespace: netology-homework
+spec:
+  containers:
+  - name: multitool
+    image: wbitt/network-multitool
+    ports:
+      - containerPort: 80
+        protocol: TCP
